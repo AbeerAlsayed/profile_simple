@@ -20,6 +20,7 @@
     <!-- Custom styles for this template-->
     <link href="{{asset('assets/css/sb-admin-2.min.css')}}" rel="stylesheet">
 
+    @include('layouts.head')
 </head>
 
 <body id="page-top">
@@ -27,16 +28,10 @@
 <!-- Page Wrapper -->
 <div id="wrapper">
 
-    <!-- Sidebar -->
-    @include('layouts.sidebar')
-    <!-- End of Sidebar -->
     <!-- Content Wrapper -->
     <div id="content-wrapper" class="d-flex flex-column">
         <!-- Main Content -->
         <div id="content">
-            <!-- Topbar -->
-            @include('layouts.main-header')
-            <!-- End of Topbar -->
             <!-- Begin Page Content -->
             @yield('content')
             <!-- /.container-fluid -->
@@ -54,7 +49,6 @@
     <i class="fas fa-angle-up"></i>
 </a>
 <!-- Logout Modal-->
-@include('layouts.modal')
 @include('layouts.footer-scripts')
 
 </body>
